@@ -1,4 +1,6 @@
 package com.example.restapi;
 
-public interface StudentRepository {
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface StudentRepository extends MongoRepository<Student, String> {
 }
